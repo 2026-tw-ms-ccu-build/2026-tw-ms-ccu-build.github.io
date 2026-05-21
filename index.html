@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Build with CCU 2026 | 微軟 × .NET 基金會技術之夜</title>
+  <meta name="description" content="2026 Microsoft Build with CCU — 由微軟與 .NET 基金會共同舉辦的技術之夜，與微軟工程師、MVP、GitHub Star 共同探索 AI 與 .NET 的未來。" />
+  <meta property="og:title" content="Microsoft Build with CCU 2026" />
+  <meta property="og:description" content="微軟 × .NET 基金會技術之夜 — 與微軟工程師、MVP、GitHub Star 共同探索 AI 與 .NET 的未來。" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            build: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradient-x 8s ease infinite',
+            'float': 'float 6s ease-in-out infinite'
+          },
+          keyframes: {
+            'gradient-x': {
+              '0%, 100%': { 'background-position': '0% 50%' },
+              '50%': { 'background-position': '100% 50%' }
+            },
+            'float': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-slate-950/70 border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-extrabold tracking-tight">
+        <span class="inline-block w-3 h-3 bg-gradient-to-br from-fuchsia-500 to-cyan-400 rounded-sm"></span>
+        <span>Build × CCU <span class="text-slate-400 font-medium">2026</span></span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <li><a href="#about" class="hover:text-white transition">關於活動</a></li>
+        <li><a href="#schedule" class="hover:text-white transition">議程</a></li>
+        <li><a href="#speakers" class="hover:text-white transition">講者</a></li>
+        <li><a href="#venue" class="hover:text-white transition">地點</a></li>
+      </ul>
+      <a href="#register" class="px-4 py-2 rounded-full bg-white text-slate-900 text-sm font-semibold hover:bg-cyan-300 transition">立即報名</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative pt-32 pb-24 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(99,102,241,0.25),_transparent_60%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(236,72,153,0.18),_transparent_60%)]"></div>
+      <div class="absolute -top-40 -right-32 w-[480px] h-[480px] rounded-full bg-gradient-to-br from-fuchsia-500/30 to-cyan-400/30 blur-3xl animate-float"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-wrap items-center gap-3 mb-8">
+        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white/10 border border-white/10">Microsoft</span>
+        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white/10 border border-white/10">.NET Foundation</span>
+        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r from-fuchsia-500/30 to-cyan-400/30 border border-white/10">Community Edition</span>
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05]">
+        <span class="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-indigo-300 to-fuchsia-400 bg-[length:200%_auto] animate-gradient-x">Microsoft Build</span>
+        <span class="block text-white">with CCU <span class="text-slate-400 font-bold">2026</span></span>
+      </h1>
+
+      <p class="mt-6 max-w-2xl text-lg md:text-xl text-slate-300 leading-relaxed">
+        一場由 <strong class="text-white">微軟</strong> 與 <strong class="text-white">.NET 基金會</strong> 共同舉辦的技術之夜。
+        三位重量級講者、最新 Build 開幕影片、Pizza 與飲料，與你一起見證 AI 與 .NET 的下一個十年。
+      </p>
+
+      <div class="mt-10 grid sm:grid-cols-3 gap-4 max-w-3xl">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+          <div class="text-xs text-slate-400">日期</div>
+          <div class="mt-1 text-lg font-bold text-white">2026 春季</div>
+          <div class="text-sm text-slate-400">17:00 – 21:00</div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+          <div class="text-xs text-slate-400">地點</div>
+          <div class="mt-1 text-lg font-bold text-white">中正大學</div>
+          <div class="text-sm text-slate-400">National Chung Cheng University</div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+          <div class="text-xs text-slate-400">費用</div>
+          <div class="mt-1 text-lg font-bold text-white">免費入場</div>
+          <div class="text-sm text-slate-400">含 Pizza、飲料、點心</div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#register" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/20">
+          立即報名 →
+        </a>
+        <a href="#schedule" class="px-7 py-3.5 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold">
+          查看議程
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div>
+        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">About</div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tight">關於 Build with CCU</h2>
+        <p class="mt-6 text-slate-300 leading-relaxed text-lg">
+          Microsoft Build 是每年微軟最具代表性的全球技術盛會。
+          我們將這場盛會搬進校園，邀請 <strong class="text-white">微軟工程師、微軟 MVP、.NET 維護者、GitHub Star</strong>
+          走進中正大學，與學生、開發者面對面分享 AI、Cloud、.NET 與開源的最新趨勢。
+        </p>
+        <p class="mt-4 text-slate-400 leading-relaxed">
+          從 Build 開幕影片的回顧出發，到三場深入的技術主題演講 — 這不只是觀看，而是親身與業界第一線參與者對話的機會。
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="rounded-2xl p-6 bg-gradient-to-br from-indigo-500/10 to-transparent border border-white/10">
+          <div class="text-3xl font-black text-white">4<span class="text-cyan-300">hr</span></div>
+          <div class="mt-2 text-sm text-slate-400">深度技術交流</div>
+        </div>
+        <div class="rounded-2xl p-6 bg-gradient-to-br from-fuchsia-500/10 to-transparent border border-white/10">
+          <div class="text-3xl font-black text-white">3<span class="text-fuchsia-300">+</span></div>
+          <div class="mt-2 text-sm text-slate-400">重量級講者</div>
+        </div>
+        <div class="rounded-2xl p-6 bg-gradient-to-br from-cyan-500/10 to-transparent border border-white/10">
+          <div class="text-3xl font-black text-white">∞</div>
+          <div class="mt-2 text-sm text-slate-400">Pizza & 飲料</div>
+        </div>
+        <div class="rounded-2xl p-6 bg-gradient-to-br from-emerald-500/10 to-transparent border border-white/10">
+          <div class="text-3xl font-black text-white">0<span class="text-emerald-300"> NTD</span></div>
+          <div class="mt-2 text-sm text-slate-400">學生免費</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="py-24 border-t border-white/5 bg-gradient-to-b from-transparent to-slate-900/40">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Schedule</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight">當晚議程</h2>
+      <p class="mt-4 text-slate-400">活動時間：17:00 – 21:00</p>
+
+      <ol class="mt-14 relative border-l-2 border-white/10 space-y-10 pl-8">
+        <li class="relative">
+          <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-cyan-300 to-indigo-500 ring-4 ring-slate-950"></span>
+          <div class="flex flex-wrap items-baseline gap-3">
+            <span class="text-cyan-300 font-mono font-bold">17:00 – 17:30</span>
+            <h3 class="text-xl font-bold text-white">入場 & 開場</h3>
+          </div>
+          <p class="mt-2 text-slate-300">微軟 Build 開幕影片播放，現場提供 <strong>免費 Pizza、飲料、Costco 點心</strong>。輕鬆 networking、認識新朋友。</p>
+        </li>
+
+        <li class="relative">
+          <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-indigo-400 to-fuchsia-500 ring-4 ring-slate-950"></span>
+          <div class="flex flex-wrap items-baseline gap-3">
+            <span class="text-cyan-300 font-mono font-bold">17:30 – 18:30</span>
+            <h3 class="text-xl font-bold text-white">Session 1 · Daniel</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">微軟台灣工程師</span>
+          </div>
+          <p class="mt-2 text-slate-300">來自微軟台灣的工程師 Daniel，分享 Microsoft Build 最新發布與第一手技術觀點。</p>
+        </li>
+
+        <li class="relative">
+          <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-fuchsia-400 to-pink-500 ring-4 ring-slate-950"></span>
+          <div class="flex flex-wrap items-baseline gap-3">
+            <span class="text-cyan-300 font-mono font-bold">18:30 – 19:30</span>
+            <h3 class="text-xl font-bold text-white">Session 2 · 林暐翰</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">.NET 專案維護者</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+          </div>
+          <p class="mt-2 text-slate-300">.NET 開源生態系維護者、微軟 MVP，帶你走進 .NET 開源世界與專案實戰。</p>
+        </li>
+
+        <li class="relative">
+          <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-amber-300 to-rose-500 ring-4 ring-slate-950"></span>
+          <div class="flex flex-wrap items-baseline gap-3">
+            <span class="text-cyan-300 font-mono font-bold">19:30 – 20:30</span>
+            <h3 class="text-xl font-bold text-white">Session 3 · 謝政廷</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">台積電經理</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">GitHub Star</span>
+          </div>
+          <p class="mt-2 text-slate-300">同時是台積電經理、微軟 MVP，以及全球少數 GitHub Star 之一，分享在大型企業推動開源與 AI 的真實經驗。</p>
+        </li>
+
+        <li class="relative">
+          <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-cyan-300 to-emerald-400 ring-4 ring-slate-950"></span>
+          <div class="flex flex-wrap items-baseline gap-3">
+            <span class="text-cyan-300 font-mono font-bold">20:30 – 21:00</span>
+            <h3 class="text-xl font-bold text-white">結尾 & 抽獎</h3>
+          </div>
+          <p class="mt-2 text-slate-300">總結回顧、Q&A、合影留念，活動圓滿落幕。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" class="py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Speakers</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight">講者陣容</h2>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-8">
+        <!-- Daniel -->
+        <article class="group relative rounded-3xl p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-cyan-400/40 transition">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+          <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-4xl font-black text-white shadow-lg shadow-blue-500/30">D</div>
+          <h3 class="mt-6 text-2xl font-bold">Daniel</h3>
+          <p class="mt-1 text-slate-400 text-sm">Microsoft Taiwan Engineer</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">微軟台灣工程師</span>
+          </div>
+          <p class="mt-5 text-slate-300 text-sm leading-relaxed">
+            來自微軟原廠的工程師，第一手帶來 Microsoft Build 最新技術發布與產品內幕。
+          </p>
+        </article>
+
+        <!-- 林暐翰 -->
+        <article class="group relative rounded-3xl p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-fuchsia-400/40 transition">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-fuchsia-400/60 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+          <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-purple-700 flex items-center justify-center text-4xl font-black text-white shadow-lg shadow-fuchsia-500/30">林</div>
+          <h3 class="mt-6 text-2xl font-bold">林暐翰</h3>
+          <p class="mt-1 text-slate-400 text-sm">.NET Project Maintainer · Microsoft MVP</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">.NET 維護者</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+          </div>
+          <p class="mt-5 text-slate-300 text-sm leading-relaxed">
+            活躍於 .NET 開源生態系，是多個熱門 .NET 專案的核心維護者，連續多年獲選微軟最有價值專家。
+          </p>
+        </article>
+
+        <!-- 謝政廷 -->
+        <article class="group relative rounded-3xl p-8 bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-amber-400/40 transition">
+          <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-amber-400/60 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+          <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-amber-400 to-rose-600 flex items-center justify-center text-4xl font-black text-white shadow-lg shadow-amber-500/30">謝</div>
+          <h3 class="mt-6 text-2xl font-bold">謝政廷</h3>
+          <p class="mt-1 text-slate-400 text-sm">TSMC Manager · Microsoft MVP · GitHub Star</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">台積電經理</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">GitHub Star</span>
+          </div>
+          <p class="mt-5 text-slate-300 text-sm leading-relaxed">
+            身兼台積電經理、微軟 MVP、與全球少數 GitHub Star 殊榮，於企業內推動開源、AI 與 DevOps 的實踐者。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue -->
+  <section id="venue" class="py-24 border-t border-white/5 bg-gradient-to-b from-slate-900/40 to-transparent">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Venue</div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tight">活動地點</h2>
+        <p class="mt-6 text-2xl font-bold text-white">國立中正大學 (CCU)</p>
+        <p class="mt-2 text-slate-400">621301 嘉義縣民雄鄉三興村大學路一段 168 號</p>
+        <p class="mt-6 text-slate-300 leading-relaxed">
+          詳細教室與會場資訊將於報名後以 Email 通知，並於本頁面更新。建議提前 15 分鐘抵達，享用美味 Pizza 與飲料。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="https://maps.google.com/?q=National+Chung+Cheng+University" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold">
+            Google Maps ↗
+          </a>
+          <a href="https://www.ccu.edu.tw/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold">
+            學校官網 ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden border border-white/10 aspect-[4/3] bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/10 to-cyan-500/20 relative">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center px-8">
+            <div class="text-6xl">📍</div>
+            <div class="mt-4 text-2xl font-black text-white">CCU Campus</div>
+            <div class="mt-2 text-slate-300 text-sm">National Chung Cheng University<br/>嘉義 · 民雄</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section id="register" class="py-28 border-t border-white/5 relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.18),_transparent_70%)]"></div>
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Join Us</div>
+      <h2 class="text-4xl md:text-6xl font-black tracking-tight">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-fuchsia-400">準備好</span>了嗎？
+      </h2>
+      <p class="mt-6 text-lg text-slate-300">
+        座位有限，名額採線上登記制。完成報名以確保你的 Pizza 🍕 與精彩夜晚。
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4 justify-center">
+        <a href="#" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/30">
+          前往報名表單 →
+        </a>
+        <a href="mailto:contact@example.com" class="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold">
+          聯絡主辦單位
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">報名連結將於活動公告後啟用</p>
+    </div>
+  </section>
+
+  <!-- Sponsors / Footer -->
+  <footer class="border-t border-white/5 py-14">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <div class="text-xs font-bold tracking-widest text-slate-500 uppercase">主辦單位</div>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-8 text-slate-300">
+          <div class="text-xl font-extrabold">Microsoft</div>
+          <div class="w-px h-6 bg-white/10 hidden sm:block"></div>
+          <div class="text-xl font-extrabold">.NET Foundation</div>
+          <div class="w-px h-6 bg-white/10 hidden sm:block"></div>
+          <div class="text-xl font-extrabold">National Chung Cheng University</div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row gap-4 items-center justify-between text-sm text-slate-500">
+        <div>© 2026 Microsoft Build with CCU. All rights reserved.</div>
+        <div class="flex items-center gap-5">
+          <a href="#about" class="hover:text-white transition">關於</a>
+          <a href="#schedule" class="hover:text-white transition">議程</a>
+          <a href="#speakers" class="hover:text-white transition">講者</a>
+          <a href="#register" class="hover:text-white transition">報名</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
