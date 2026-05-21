@@ -69,8 +69,39 @@
     </nav>
   </header>
 
+  <!-- BUILD pixel banner (black background, Microsoft Build style) -->
+  <section id="top" class="relative bg-black pt-28 pb-16 overflow-hidden">
+    <!-- decorative dotted pixels (mimicking Microsoft Build site) -->
+    <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
+      <div class="absolute top-10 left-[8%] grid grid-cols-3 gap-1.5">
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+      </div>
+      <div class="absolute top-16 right-[10%] grid grid-cols-4 gap-1.5">
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+      </div>
+      <div class="absolute bottom-10 left-[14%] grid grid-cols-3 gap-1.5">
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+      </div>
+      <div class="absolute bottom-16 right-[6%] grid grid-cols-2 gap-1.5">
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
+      </div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 flex justify-center">
+      <img src="assets/img/build-hero.png" alt="BUILD" width="900" height="220" class="w-full max-w-2xl h-auto select-none" />
+    </div>
+  </section>
+
   <!-- Hero -->
-  <section id="top" class="relative pt-32 pb-24 overflow-hidden">
+  <section class="relative pt-16 pb-24 overflow-hidden">
     <div class="absolute inset-0 -z-10">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(99,102,241,0.25),_transparent_60%)]"></div>
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(236,72,153,0.18),_transparent_60%)]"></div>
@@ -78,10 +109,6 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-6">
-      <div class="flex justify-center mb-10">
-        <img src="assets/img/build-hero.png" alt="BUILD" width="900" height="220" class="w-full max-w-2xl h-auto select-none drop-shadow-[0_0_40px_rgba(168,85,247,0.25)]" />
-      </div>
-
       <div class="flex flex-wrap items-center gap-3 mb-8">
         <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white/10 border border-white/10">Microsoft</span>
         <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white/10 border border-white/10">.NET Foundation</span>
