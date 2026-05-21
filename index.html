@@ -60,12 +60,19 @@
         <img src="assets/img/logo.svg" alt="Microsoft Build × CCU 2026" width="180" height="32" class="h-7 w-auto select-none" />
       </a>
       <ul class="hidden md:flex items-center gap-8 text-sm text-slate-300">
-        <li><a href="#about" class="hover:text-white transition">關於活動</a></li>
-        <li><a href="#schedule" class="hover:text-white transition">議程</a></li>
-        <li><a href="#speakers" class="hover:text-white transition">講者</a></li>
-        <li><a href="#venue" class="hover:text-white transition">地點</a></li>
+        <li><a href="#about" class="hover:text-white transition" data-i18n="nav.about">關於活動</a></li>
+        <li><a href="#schedule" class="hover:text-white transition" data-i18n="nav.schedule">議程</a></li>
+        <li><a href="#speakers" class="hover:text-white transition" data-i18n="nav.speakers">講者</a></li>
+        <li><a href="#venue" class="hover:text-white transition" data-i18n="nav.venue">地點</a></li>
       </ul>
-      <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-4 py-2 rounded-full bg-white text-slate-900 text-sm font-semibold hover:bg-cyan-300 transition">立即報名</a>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:inline-flex items-center rounded-full border border-white/10 bg-white/5 p-0.5 text-xs font-semibold" role="group" data-i18n-attr="aria-label:lang.switch.aria" aria-label="切換語言">
+          <button type="button" data-lang-btn="zh-Hant" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">繁</button>
+          <button type="button" data-lang-btn="zh-Hans" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">简</button>
+          <button type="button" data-lang-btn="en" class="px-2.5 py-1 rounded-full text-slate-400 hover:text-white transition">EN</button>
+        </div>
+        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-4 py-2 rounded-full bg-white text-slate-900 text-sm font-semibold hover:bg-cyan-300 transition" data-i18n="nav.register">立即報名</a>
+      </div>
     </nav>
   </header>
 
@@ -117,37 +124,37 @@
 
       <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05]">
         <span class="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-indigo-300 to-fuchsia-400 bg-[length:200%_auto] animate-gradient-x">Microsoft Build</span>
-        <span class="block text-white">with CCU <span class="text-slate-400 font-bold">2026</span></span>
+        <span class="block text-white">with CCU <span class="text-slate-400 font-bold" data-i18n="hero.title.line2.year">2026</span></span>
       </h1>
 
-      <p class="mt-6 max-w-2xl text-lg md:text-xl text-slate-300 leading-relaxed">
+      <p class="mt-6 max-w-2xl text-lg md:text-xl text-slate-300 leading-relaxed" data-i18n-html="hero.tagline">
         一場由 <strong class="text-white">微軟</strong>、<strong class="text-white">.NET 基金會</strong> 與 <strong class="text-white">中正大學 資工所</strong> 共同舉辦的技術交流活動。
         三位講者、最新 Microsoft Build 開幕影片，並提供 Pizza 與飲料，一起認識 AI 與 .NET 的最新進展。
       </p>
 
       <div class="mt-10 grid sm:grid-cols-3 gap-4 max-w-3xl">
         <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
-          <div class="text-xs text-slate-400">日期</div>
-          <div class="mt-1 text-lg font-bold text-white">2026 / 06 / 13</div>
-          <div class="text-sm text-slate-400">週六 · 17:00 – 21:00</div>
+          <div class="text-xs text-slate-400" data-i18n="hero.date.label">日期</div>
+          <div class="mt-1 text-lg font-bold text-white" data-i18n="hero.date.value">2026 / 06 / 13</div>
+          <div class="text-sm text-slate-400" data-i18n="hero.date.sub">週六 · 17:00 – 21:00</div>
         </div>
         <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
-          <div class="text-xs text-slate-400">地點</div>
-          <div class="mt-1 text-lg font-bold text-white">中正大學 資工 101</div>
-          <div class="text-sm text-slate-400">CCU · CSIE Room 101</div>
+          <div class="text-xs text-slate-400" data-i18n="hero.venue.label">地點</div>
+          <div class="mt-1 text-lg font-bold text-white" data-i18n="hero.venue.value">中正大學 資工 101</div>
+          <div class="text-sm text-slate-400" data-i18n="hero.venue.sub">CCU · CSIE Room 101</div>
         </div>
         <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
-          <div class="text-xs text-slate-400">費用</div>
-          <div class="mt-1 text-lg font-bold text-white">免費入場</div>
-          <div class="text-sm text-slate-400">含 Pizza、飲料、點心</div>
+          <div class="text-xs text-slate-400" data-i18n="hero.fee.label">費用</div>
+          <div class="mt-1 text-lg font-bold text-white" data-i18n="hero.fee.value">免費入場</div>
+          <div class="text-sm text-slate-400" data-i18n="hero.fee.sub">含 Pizza、飲料、點心</div>
         </div>
       </div>
 
       <div class="mt-10 flex flex-wrap gap-4">
-        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/20">
+        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/20" data-i18n="hero.cta.register">
           前往 KKTIX 報名 →
         </a>
-        <a href="#schedule" class="px-7 py-3.5 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold">
+        <a href="#schedule" class="px-7 py-3.5 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold" data-i18n="hero.cta.schedule">
           查看議程
         </a>
       </div>
@@ -158,33 +165,33 @@
   <section id="about" class="py-24 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
       <div>
-        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">About</div>
-        <h2 class="text-4xl md:text-5xl font-black tracking-tight">關於 Build with CCU</h2>
-        <p class="mt-6 text-slate-300 leading-relaxed text-lg">
+        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3" data-i18n="about.kicker">About</div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tight" data-i18n="about.title">關於 Build with CCU</h2>
+        <p class="mt-6 text-slate-300 leading-relaxed text-lg" data-i18n-html="about.body1">
           Microsoft Build 是微軟每年針對開發者舉辦的技術大會。
           這次我們將 Build 帶進校園，邀請 <strong class="text-white">微軟工程師、微軟 MVP、.NET 維護者、GitHub Star</strong>
           走進中正大學，與學生及開發者分享 AI、Cloud、.NET 與開源的最新資訊。
         </p>
-        <p class="mt-4 text-slate-400 leading-relaxed">
+        <p class="mt-4 text-slate-400 leading-relaxed" data-i18n="about.body2">
           從 Build 開幕影片出發，接著三場技術主題演講。除了聽，也歡迎在現場與講者及其他參與者交流。
         </p>
       </div>
       <div class="grid grid-cols-2 gap-4">
         <div class="rounded-2xl p-6 bg-gradient-to-br from-indigo-500/10 to-transparent border border-white/10">
           <div class="text-3xl font-black text-white">4<span class="text-cyan-300">hr</span></div>
-          <div class="mt-2 text-sm text-slate-400">技術交流時長</div>
+          <div class="mt-2 text-sm text-slate-400" data-i18n="about.stat.duration">技術交流時長</div>
         </div>
         <div class="rounded-2xl p-6 bg-gradient-to-br from-fuchsia-500/10 to-transparent border border-white/10">
           <div class="text-3xl font-black text-white">3<span class="text-fuchsia-300">+</span></div>
-          <div class="mt-2 text-sm text-slate-400">講者場次</div>
+          <div class="mt-2 text-sm text-slate-400" data-i18n="about.stat.sessions">講者場次</div>
         </div>
         <div class="rounded-2xl p-6 bg-gradient-to-br from-cyan-500/10 to-transparent border border-white/10">
           <div class="text-3xl font-black text-white">∞</div>
-          <div class="mt-2 text-sm text-slate-400">Pizza & 飲料</div>
+          <div class="mt-2 text-sm text-slate-400" data-i18n="about.stat.pizza">Pizza & 飲料</div>
         </div>
         <div class="rounded-2xl p-6 bg-gradient-to-br from-emerald-500/10 to-transparent border border-white/10">
           <div class="text-3xl font-black text-white">0<span class="text-emerald-300"> NTD</span></div>
-          <div class="mt-2 text-sm text-slate-400">學生免費</div>
+          <div class="mt-2 text-sm text-slate-400" data-i18n="about.stat.free">學生免費</div>
         </div>
       </div>
     </div>
@@ -193,62 +200,62 @@
   <!-- Schedule -->
   <section id="schedule" class="py-24 border-t border-white/5 bg-gradient-to-b from-transparent to-slate-900/40">
     <div class="max-w-5xl mx-auto px-6">
-      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Schedule</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">當晚議程</h2>
-      <p class="mt-4 text-slate-400">2026 / 06 / 13（六）17:00 – 21:00</p>
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3" data-i18n="schedule.kicker">Schedule</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight" data-i18n="schedule.title">當晚議程</h2>
+      <p class="mt-4 text-slate-400" data-i18n="schedule.date">2026 / 06 / 13（六）17:00 – 21:00</p>
 
       <ol class="mt-14 relative border-l-2 border-white/10 space-y-10 pl-8">
         <li class="relative">
           <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-cyan-300 to-indigo-500 ring-4 ring-slate-950"></span>
           <div class="flex flex-wrap items-baseline gap-3">
             <span class="text-cyan-300 font-mono font-bold">17:00 – 17:30</span>
-            <h3 class="text-xl font-bold text-white">入場 & 開場</h3>
+            <h3 class="text-xl font-bold text-white" data-i18n="sched.1.title">入場 & 開場</h3>
           </div>
-          <p class="mt-2 text-slate-300">微軟 Build 開幕影片播放，現場提供 <strong>免費 Pizza、飲料、Costco 點心</strong>。輕鬆 networking、認識新朋友。</p>
+          <p class="mt-2 text-slate-300" data-i18n-html="sched.1.desc">微軟 Build 開幕影片播放，現場提供 <strong>免費 Pizza、飲料、Costco 點心</strong>。輕鬆 networking、認識新朋友。</p>
         </li>
 
         <li class="relative">
           <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-indigo-400 to-fuchsia-500 ring-4 ring-slate-950"></span>
           <div class="flex flex-wrap items-baseline gap-3">
             <span class="text-cyan-300 font-mono font-bold">17:30 – 18:30</span>
-            <h3 class="text-xl font-bold text-white">Session 1 · Daniel</h3>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">微軟台灣工程師</span>
+            <h3 class="text-xl font-bold text-white" data-i18n="sched.2.session">Session 1 · Daniel</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30" data-i18n="sched.2.badge">微軟台灣工程師</span>
           </div>
-          <p class="mt-3 text-lg font-semibold text-white">PostgreSQL Extension 與 Hook 機制：用 Rust pgrx 實戰拆解 redis_fdw_rs 專案</p>
-          <p class="mt-2 text-slate-300">以 <code class="px-1.5 py-0.5 rounded bg-white/10 text-cyan-200 text-sm">redis_fdw_rs</code> 為例，帶你了解 PostgreSQL 的 Extension 與 Hook 機制，並使用 Rust pgrx 實作一個 Foreign Data Wrapper。</p>
+          <p class="mt-3 text-lg font-semibold text-white" data-i18n="sched.2.title">PostgreSQL Extension 與 Hook 機制：用 Rust pgrx 實戰拆解 redis_fdw_rs 專案</p>
+          <p class="mt-2 text-slate-300" data-i18n-html="sched.2.desc">以 <code class="px-1.5 py-0.5 rounded bg-white/10 text-cyan-200 text-sm">redis_fdw_rs</code> 為例，帶你了解 PostgreSQL 的 Extension 與 Hook 機制，並使用 Rust pgrx 實作一個 Foreign Data Wrapper。</p>
         </li>
 
         <li class="relative">
           <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-fuchsia-400 to-pink-500 ring-4 ring-slate-950"></span>
           <div class="flex flex-wrap items-baseline gap-3">
             <span class="text-cyan-300 font-mono font-bold">18:30 – 19:30</span>
-            <h3 class="text-xl font-bold text-white">Session 2 · 林暐翰</h3>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">.NET 專案維護者</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+            <h3 class="text-xl font-bold text-white" data-i18n="sched.3.session">Session 2 · 林暐翰</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30" data-i18n="sched.3.badge1">.NET 專案維護者</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30" data-i18n="sched.3.badge2">Microsoft MVP</span>
           </div>
-          <p class="mt-3 text-lg font-semibold text-white">GitHub AI 訓練專屬知識庫開發專案</p>
-          <p class="mt-2 text-slate-300">分享如何在 GitHub 生態中打造專屬知識庫並訓練 AI 模型，以及這樣的專案是如何規劃、實作與部署的。</p>
+          <p class="mt-3 text-lg font-semibold text-white" data-i18n="sched.3.title">GitHub AI 訓練專屬知識庫開發專案</p>
+          <p class="mt-2 text-slate-300" data-i18n="sched.3.desc">分享如何在 GitHub 生態中打造專屬知識庫並訓練 AI 模型，以及這樣的專案是如何規劃、實作與部署的。</p>
         </li>
 
         <li class="relative">
           <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-amber-300 to-rose-500 ring-4 ring-slate-950"></span>
           <div class="flex flex-wrap items-baseline gap-3">
             <span class="text-cyan-300 font-mono font-bold">19:30 – 20:30</span>
-            <h3 class="text-xl font-bold text-white">Session 3 · 謝政廷</h3>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">台積電經理</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">GitHub Star</span>
+            <h3 class="text-xl font-bold text-white" data-i18n="sched.4.session">Session 3 · 謝政廷</h3>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30" data-i18n="sched.4.badge1">台積電經理</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30" data-i18n="sched.4.badge2">Microsoft MVP</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30" data-i18n="sched.4.badge3">GitHub Star</span>
           </div>
-          <p class="mt-2 text-slate-300">同時是台積電經理、微軟 MVP，以及全球少數 GitHub Star 之一，分享在大型企業推動開源與 AI 的真實經驗。</p>
+          <p class="mt-2 text-slate-300" data-i18n="sched.4.desc">同時是台積電經理、微軟 MVP，以及全球少數 GitHub Star 之一，分享在大型企業推動開源與 AI 的真實經驗。</p>
         </li>
 
         <li class="relative">
           <span class="absolute -left-[42px] top-1 w-5 h-5 rounded-full bg-gradient-to-br from-cyan-300 to-emerald-400 ring-4 ring-slate-950"></span>
           <div class="flex flex-wrap items-baseline gap-3">
             <span class="text-cyan-300 font-mono font-bold">20:30 – 21:00</span>
-            <h3 class="text-xl font-bold text-white">結尾 & 抽獎</h3>
+            <h3 class="text-xl font-bold text-white" data-i18n="sched.5.title">結尾 & 抽獎</h3>
           </div>
-          <p class="mt-2 text-slate-300">總結、Q&A 與合影，活動結束。</p>
+          <p class="mt-2 text-slate-300" data-i18n="sched.5.desc">總結、Q&A 與合影，活動結束。</p>
         </li>
       </ol>
     </div>
@@ -257,8 +264,8 @@
   <!-- Speakers -->
   <section id="speakers" class="py-24 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Speakers</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">講者陣容</h2>
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3" data-i18n="speakers.kicker">Speakers</div>
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight" data-i18n="speakers.title">講者陣容</h2>
 
       <div class="mt-14 grid md:grid-cols-3 gap-8">
         <!-- Daniel -->
@@ -268,12 +275,12 @@
             <img src="assets/img/daniel.jpeg" alt="Daniel" loading="lazy" class="w-full h-full object-cover" />
           </div>
           <h3 class="mt-6 text-2xl font-bold">Daniel</h3>
-          <p class="mt-1 text-slate-400 text-sm">Microsoft Taiwan Engineer</p>
+          <p class="mt-1 text-slate-400 text-sm" data-i18n="sp.daniel.role">Microsoft Taiwan Engineer</p>
           <div class="mt-4 flex flex-wrap gap-2">
-            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">微軟台灣工程師</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30" data-i18n="sp.daniel.badge">微軟台灣工程師</span>
           </div>
-          <p class="mt-5 text-sm font-bold text-cyan-300">PostgreSQL Extension 與 Hook 機制</p>
-          <p class="mt-1 text-slate-300 text-sm leading-relaxed">
+          <p class="mt-5 text-sm font-bold text-cyan-300" data-i18n="sp.daniel.title">PostgreSQL Extension 與 Hook 機制</p>
+          <p class="mt-1 text-slate-300 text-sm leading-relaxed" data-i18n-html="sp.daniel.desc">
             用 Rust pgrx 實戰拆解 <code class="text-cyan-200">redis_fdw_rs</code> 專案，了解 PostgreSQL 如何透過 Extension 與 Hook 達到高度可擴充性。
           </p>
         </article>
@@ -285,13 +292,13 @@
             <img src="assets/img/weihan.jpeg" alt="林曎翰" loading="lazy" class="w-full h-full object-cover" />
           </div>
           <h3 class="mt-6 text-2xl font-bold">林暐翰</h3>
-          <p class="mt-1 text-slate-400 text-sm">.NET Project Maintainer · Microsoft MVP</p>
+          <p class="mt-1 text-slate-400 text-sm" data-i18n="sp.weihan.role">.NET Project Maintainer · Microsoft MVP</p>
           <div class="mt-4 flex flex-wrap gap-2">
-            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">.NET 維護者</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30" data-i18n="sp.weihan.badge1">.NET 維護者</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30" data-i18n="sp.weihan.badge2">Microsoft MVP</span>
           </div>
-          <p class="mt-5 text-sm font-bold text-fuchsia-300">GitHub AI 訓練專屬知識庫開發專案</p>
-          <p class="mt-1 text-slate-300 text-sm leading-relaxed">
+          <p class="mt-5 text-sm font-bold text-fuchsia-300" data-i18n="sp.weihan.title">GitHub AI 訓練專屬知識庫開發專案</p>
+          <p class="mt-1 text-slate-300 text-sm leading-relaxed" data-i18n="sp.weihan.desc">
             分享如何在 GitHub 生態中打造專屬知識庫並用於 AI 訓練，以及一個開源專案從規劃、實作到部署的完整流程。
           </p>
         </article>
@@ -303,13 +310,13 @@
             <img src="assets/img/jeffrey.jpg" alt="謝政廷" loading="lazy" class="w-full h-full object-cover" />
           </div>
           <h3 class="mt-6 text-2xl font-bold">謝政廷</h3>
-          <p class="mt-1 text-slate-400 text-sm">TSMC Manager · Microsoft MVP · GitHub Star</p>
+          <p class="mt-1 text-slate-400 text-sm" data-i18n="sp.jeffrey.role">TSMC Manager · Microsoft MVP · GitHub Star</p>
           <div class="mt-4 flex flex-wrap gap-2">
-            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">台積電經理</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Microsoft MVP</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">GitHub Star</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30" data-i18n="sp.jeffrey.badge1">台積電經理</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30" data-i18n="sp.jeffrey.badge2">Microsoft MVP</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30" data-i18n="sp.jeffrey.badge3">GitHub Star</span>
           </div>
-          <p class="mt-5 text-slate-300 text-sm leading-relaxed">
+          <p class="mt-5 text-slate-300 text-sm leading-relaxed" data-i18n="sp.jeffrey.desc">
             身兼台積電經理、微軟 MVP、與全球少數 GitHub Star 殊榮，於企業內推動開源、AI 與 DevOps 的實踐者。
           </p>
         </article>
@@ -321,41 +328,41 @@
   <section id="venue" class="py-24 border-t border-white/5 bg-gradient-to-b from-slate-900/40 to-transparent">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Venue</div>
-        <h2 class="text-4xl md:text-5xl font-black tracking-tight">活動地點</h2>
-        <p class="mt-6 text-2xl font-bold text-white">國立中正大學 · 資訊工程學系</p>
-        <p class="mt-1 text-lg font-semibold text-cyan-300">資工教室 101</p>
-        <p class="mt-3 text-slate-400">621301 嘉義縣民雄鄉大學路一段 168 號</p>
-        <p class="mt-6 text-slate-300 leading-relaxed">
+        <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3" data-i18n="venue.kicker">Venue</div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tight" data-i18n="venue.title">活動地點</h2>
+        <p class="mt-6 text-2xl font-bold text-white" data-i18n="venue.school">國立中正大學 · 資訊工程學系</p>
+        <p class="mt-1 text-lg font-semibold text-cyan-300" data-i18n="venue.room">資工教室 101</p>
+        <p class="mt-3 text-slate-400" data-i18n="venue.address">621301 嘉義縣民雄鄉大學路一段 168 號</p>
+        <p class="mt-6 text-slate-300 leading-relaxed" data-i18n-html="venue.desc">
           活動位於中正大學資工系館 <strong class="text-white">101 教室</strong>。建議提前 15 分鐘抵達，先享用 Pizza 與飲料 🍕。校內停車有限，鼓勵搭乘大眾運輸前往。
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-semibold hover:scale-[1.02] transition text-sm">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-semibold hover:scale-[1.02] transition text-sm" data-i18n="venue.cta.maps">
             🗺️ Google Maps 路線指引 ↗
           </a>
-          <a href="https://maps.app.goo.gl/?q=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold">
+          <a href="https://maps.app.goo.gl/?q=%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold" data-i18n="venue.cta.openmaps">
             在 Google Maps 開啟 ↗
           </a>
-          <a href="https://www.cs.ccu.edu.tw/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold">
+          <a href="https://www.cs.ccu.edu.tw/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/5 transition text-sm font-semibold" data-i18n="venue.cta.dept">
             中正資工系 ↗
           </a>
         </div>
 
         <div class="mt-8 grid grid-cols-3 gap-3 text-sm">
           <div class="rounded-xl bg-white/5 border border-white/10 p-3">
-            <div class="text-xs text-slate-400">🚆 高鐵</div>
-            <div class="mt-1 font-semibold text-white">嘉義站</div>
-            <div class="text-xs text-slate-400">轉 BRT / 公車</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.hsr">🚆 高鐵</div>
+            <div class="mt-1 font-semibold text-white" data-i18n="venue.transit.hsr.v">嘉義站</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.hsr.s">轉 BRT / 公車</div>
           </div>
           <div class="rounded-xl bg-white/5 border border-white/10 p-3">
-            <div class="text-xs text-slate-400">🚌 公車</div>
-            <div class="mt-1 font-semibold text-white">BRT / 7214</div>
-            <div class="text-xs text-slate-400">中正大學站</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.bus">🚌 公車</div>
+            <div class="mt-1 font-semibold text-white" data-i18n="venue.transit.bus.v">BRT / 7214</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.bus.s">中正大學站</div>
           </div>
           <div class="rounded-xl bg-white/5 border border-white/10 p-3">
-            <div class="text-xs text-slate-400">🚗 開車</div>
-            <div class="mt-1 font-semibold text-white">校內停車</div>
-            <div class="text-xs text-slate-400">名額有限</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.car">🚗 開車</div>
+            <div class="mt-1 font-semibold text-white" data-i18n="venue.transit.car.v">校內停車</div>
+            <div class="text-xs text-slate-400" data-i18n="venue.transit.car.s">名額有限</div>
           </div>
         </div>
       </div>
@@ -379,22 +386,22 @@
   <section id="register" class="py-28 border-t border-white/5 relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.18),_transparent_70%)]"></div>
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3">Join Us</div>
+      <div class="text-cyan-300 text-sm font-bold tracking-widest uppercase mb-3" data-i18n="reg.kicker">Join Us</div>
       <h2 class="text-4xl md:text-6xl font-black tracking-tight">
-        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-fuchsia-400">準備好</span>了嗎？
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-fuchsia-400" data-i18n="reg.title.a">準備好</span><span data-i18n="reg.title.b">了嗎？</span>
       </h2>
-      <p class="mt-6 text-lg text-slate-300">
+      <p class="mt-6 text-lg text-slate-300" data-i18n="reg.desc">
         座位有限，名額採線上登記制。完成報名以確保你的入場資格與 Pizza 🍕。
       </p>
       <div class="mt-10 flex flex-wrap gap-4 justify-center">
-        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/30">
+        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-slate-950 font-bold hover:scale-[1.02] transition shadow-lg shadow-fuchsia-500/30" data-i18n="reg.cta1">
           前往 KKTIX 報名 ↗
         </a>
-        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold">
+        <a href="https://minisoftware.kktix.cc/events/8be3b970" target="_blank" rel="noopener" class="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 transition font-semibold" data-i18n="reg.cta2">
           查看活動頁面
         </a>
       </div>
-      <p class="mt-6 text-sm text-slate-500">報名平台：KKTIX · 座位有限，依報名先後順序</p>
+      <p class="mt-6 text-sm text-slate-500" data-i18n="reg.note">報名平台：KKTIX · 座位有限，依報名先後順序</p>
     </div>
   </section>
 
@@ -402,30 +409,31 @@
   <footer class="border-t border-white/5 py-14">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center">
-        <div class="text-xs font-bold tracking-widest text-slate-500 uppercase">主辦單位</div>
+        <div class="text-xs font-bold tracking-widest text-slate-500 uppercase" data-i18n="footer.organizers">主辦單位</div>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-8 text-slate-300">
           <div class="text-xl font-extrabold">Microsoft</div>
           <div class="w-px h-6 bg-white/10 hidden sm:block"></div>
           <div class="text-xl font-extrabold">.NET Foundation</div>
           <div class="w-px h-6 bg-white/10 hidden sm:block"></div>
-          <div class="text-xl font-extrabold">中正大學 資工所</div>
+          <div class="text-xl font-extrabold" data-i18n="footer.org3">中正大學 資工所</div>
           <div class="text-sm text-slate-500 w-full sm:w-auto sm:hidden"></div>
         </div>
-        <div class="mt-3 text-sm text-slate-500">CCU Department of Computer Science and Information Engineering</div>
+        <div class="mt-3 text-sm text-slate-500" data-i18n="footer.dept">CCU Department of Computer Science and Information Engineering</div>
       </div>
 
       <div class="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row gap-4 items-center justify-between text-sm text-slate-500">
-        <div>© 2026 Microsoft Build with CCU. All rights reserved.</div>
+        <div data-i18n="footer.copyright">© 2026 Microsoft Build with CCU. All rights reserved.</div>
         <div class="flex items-center gap-5">
-          <a href="#about" class="hover:text-white transition">關於</a>
-          <a href="#schedule" class="hover:text-white transition">議程</a>
-          <a href="#speakers" class="hover:text-white transition">講者</a>
-          <a href="#register" class="hover:text-white transition">報名</a>
+          <a href="#about" class="hover:text-white transition" data-i18n="footer.about">關於</a>
+          <a href="#schedule" class="hover:text-white transition" data-i18n="footer.schedule">議程</a>
+          <a href="#speakers" class="hover:text-white transition" data-i18n="footer.speakers">講者</a>
+          <a href="#register" class="hover:text-white transition" data-i18n="footer.register">報名</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script>
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
