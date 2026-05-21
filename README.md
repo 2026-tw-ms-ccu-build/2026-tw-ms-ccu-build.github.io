@@ -15,7 +15,7 @@
 | 17:00 – 17:30 | 入場 + 開場 + 微軟 Build 開幕影片 |
 | 17:30 – 18:30 | Daniel｜微軟台灣工程師 |
 | 18:30 – 19:30 | 林暐翰｜.NET 專案維護者、Microsoft MVP |
-| 19:30 – 20:30 | 謝政廷｜台積電經理、Microsoft MVP、GitHub Star |
+| 19:30 – 20:30 | 謝政廷｜台積電副理、Microsoft MVP、GitHub Star |
 | 20:30 – 21:00 | 結尾 |
 
 ## 技術
