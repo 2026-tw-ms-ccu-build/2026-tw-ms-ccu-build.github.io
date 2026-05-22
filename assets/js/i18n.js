@@ -60,7 +60,7 @@
         'sched.4.badge3': 'GitHub Star',
         'sched.4.desc': '同時是台積電副理、微軟 MVP,以及全球少數 GitHub Star 之一,分享在大型企業推動開源與 AI 的真實經驗。',
         'sched.5.title': '結尾 & 紀念禮物',
-        'sched.5.desc': '總結、Q&A 與合影,參與的每位夥伴都可獲得一頂活動紀念帽 🧢,活動結束。',
+        'sched.5.desc': '總結、Q&A 與合影，參與的每位夥伴都可獲得活動紀念帽 🧢 與其他小禮物 🎁，活動結束。',
 
         'speakers.kicker': 'Speakers',
         'speakers.title': '講者陣容',
@@ -177,7 +177,7 @@
         'sched.4.badge3': 'GitHub Star',
         'sched.4.desc': 'TSMC Deputy Manager, Microsoft MVP, and one of the few GitHub Stars worldwide — sharing real-world experience driving open source and AI inside a large enterprise.',
         'sched.5.title': 'Wrap-up & Souvenir',
-        'sched.5.desc': 'Closing remarks, Q&A, group photo — every attendee gets an event hat 🧢. See you next time!',
+        'sched.5.desc': 'Closing remarks, Q&A, group photo — every attendee gets an event hat 🧢 plus other small giveaways 🎁. See you next time!',
 
         'speakers.kicker': 'Speakers',
         'speakers.title': 'Speaker Lineup',
