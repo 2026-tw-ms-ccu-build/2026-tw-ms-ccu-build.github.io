@@ -18,7 +18,7 @@
         'nav.register': '立即報名',
 
         'hero.title.line2.year': '2026',
-        'hero.tagline': '一場由 <strong class="text-white">微軟</strong>、<strong class="text-white">.NET 基金會</strong> 與 <strong class="text-white">中正大學 資工所</strong> 共同舉辦的技術交流活動。三位講者、最新 Microsoft Build 開幕影片，並提供 Pizza 與飲料，一起認識 AI 與 微軟/GitHub 技術的最新進展。',
+        'hero.tagline': '一場由 <strong class="text-white">微軟</strong> 與 <strong class="text-white">中正大學 資工所</strong> 共同舉辦的技術交流活動，並由 <span class="text-slate-400">.NET 基金會</span> 協办。三位講者、最新 Microsoft Build 開幕影片，並提供 Pizza 與飲料，一起認識 AI 與 微軟/GitHub 技術的最新進展。',
         'hero.date.label': '日期',
         'hero.date.value': '2026 / 06 / 13',
         'hero.date.sub': '週六 · 17:00 – 21:00',
@@ -135,7 +135,7 @@
         'nav.register': 'Register',
 
         'hero.title.line2.year': '2026',
-        'hero.tagline': 'A tech meetup co-hosted by <strong class="text-white">Microsoft</strong>, the <strong class="text-white">.NET Foundation</strong> and <strong class="text-white">CCU CSIE</strong>. Three speakers, the latest Microsoft Build opening video, plus pizza and drinks — let\'s explore the latest in AI and Microsoft/GitHub tech together.',
+        'hero.tagline': 'A tech meetup co-hosted by <strong class="text-white">Microsoft</strong> and <strong class="text-white">CCU CSIE</strong>, with support from the <span class="text-slate-400">.NET Foundation</span>. Three speakers, the latest Microsoft Build opening video, plus pizza and drinks — let\'s explore the latest in AI and Microsoft/GitHub tech together.',
         'hero.date.label': 'Date',
         'hero.date.value': 'Jun 13, 2026',
         'hero.date.sub': 'Saturday · 17:00 – 21:00',
