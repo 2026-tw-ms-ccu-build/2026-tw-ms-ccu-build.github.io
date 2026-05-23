@@ -75,34 +75,25 @@
     </nav>
   </header>
 
-  <!-- BUILD pixel banner (black background, Microsoft Build style) -->
-  <section id="top" class="relative bg-black pt-28 pb-16 overflow-hidden">
-    <!-- decorative dotted pixels (mimicking Microsoft Build site) -->
-    <div class="absolute inset-0 pointer-events-none opacity-50" aria-hidden="true">
-      <div class="absolute top-10 left-[8%] grid grid-cols-3 gap-1.5">
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+  <!-- BUILD photo backdrop banner -->
+  <section id="top" class="relative bg-black pt-24 overflow-hidden">
+    <div class="relative h-[260px] md:h-[330px] max-w-[1600px] mx-auto overflow-hidden">
+      <img src="assets/img/build-hero.png" alt="Microsoft Build" width="2040" height="250" class="absolute left-1/2 top-20 md:top-24 w-[78%] max-w-6xl -translate-x-1/2 select-none" />
+
+      <div class="absolute left-6 md:left-12 top-8 md:top-10 flex items-center gap-3 text-xs md:text-sm font-black uppercase tracking-tight text-white drop-shadow-[0_0_18px_rgba(0,0,0,0.85)]" aria-label="Microsoft Build">
+        <span class="grid h-5 w-5 grid-cols-2 gap-0.5" aria-hidden="true">
+          <span class="bg-[#f25022]"></span><span class="bg-[#7fba00]"></span>
+          <span class="bg-[#00a4ef]"></span><span class="bg-[#ffb900]"></span>
+        </span>
+        <span>Microsoft Build</span>
       </div>
-      <div class="absolute top-16 right-[10%] grid grid-cols-4 gap-1.5">
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
-        <span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span><span class="w-1.5 h-1.5 bg-slate-600"></span>
+
+      <div class="absolute left-6 md:left-12 bottom-8 md:bottom-10 flex items-center gap-3 border-l-4 border-[#00a4ef] bg-black/70 px-4 py-3 md:px-5 md:py-4 font-black text-white shadow-2xl shadow-black/40 backdrop-blur-md">
+        <span class="text-lg md:text-2xl">微軟 x 中正大學</span>
+        <strong class="text-2xl md:text-3xl text-[#00a4ef]">2026</strong>
       </div>
-      <div class="absolute bottom-10 left-[14%] grid grid-cols-3 gap-1.5">
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-      </div>
-      <div class="absolute bottom-16 right-[6%] grid grid-cols-2 gap-1.5">
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-        <span class="w-1.5 h-1.5 bg-slate-700"></span><span class="w-1.5 h-1.5 bg-slate-700"></span>
-      </div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-6 flex justify-center">
-      <img src="assets/img/build-hero.png" alt="Microsoft Build" width="2040" height="250" class="w-full max-w-4xl h-auto select-none" />
+
+      <div class="absolute inset-x-0 bottom-0 h-1.5 bg-[linear-gradient(90deg,#f25022_0_18%,#7fba00_18%_36%,#00a4ef_36%_74%,#ffb900_74%_100%)]" aria-hidden="true"></div>
     </div>
   </section>
 
