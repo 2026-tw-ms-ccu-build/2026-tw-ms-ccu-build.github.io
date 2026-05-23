@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>600x70cm 活動橫幅 | Microsoft Build with CCU 2026</title>
+  <meta name="description" content="Microsoft Build with CCU 2026 600x70cm HTML5 活動橫幅。" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+  <link rel="stylesheet" href="assets/css/banner.css" />
+</head>
+<body>
+  <div class="banner-tools" aria-label="橫幅工具">
+    <button class="download-button" type="button" data-download-banner>下載 PNG</button>
+  </div>
+
+  <main class="preview-stage" aria-label="Microsoft Build with CCU 2026 活動橫幅預覽">
+    <section class="event-banner" aria-label="600x70cm 活動橫幅">
+      <img class="build-art" src="assets/img/build-hero.png" alt="Microsoft Build" />
+
+      <div class="banner-content">
+        <div class="brand-lockup" aria-label="Microsoft Build with CCU 2026">
+          <span class="ms-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span>Microsoft Build</span>
+        </div>
+
+        <div class="ccu-lockup">
+          <span>微軟 x 中正大學</span>
+          <strong>2026</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const downloadButton = document.querySelector('[data-download-banner]');
+
+    downloadButton.addEventListener('click', async () => {
+      const banner = document.querySelector('.event-banner');
+      const fileName = 'microsoft-build-with-ccu-2026-banner.png';
+
+      downloadButton.disabled = true;
+      downloadButton.textContent = '產生中...';
+
+      try {
+        await document.fonts.ready;
+
+        const bannerWidth = banner.getBoundingClientRect().width;
+        const outputWidth = 6000;
+        const outputHeight = 700;
+        const scale = outputWidth / bannerWidth;
+        const renderedCanvas = await html2canvas(banner, {
+          backgroundColor: null,
+          scale,
+          useCORS: true,
+          logging: false
+        });
+        const canvas = document.createElement('canvas');
+        canvas.width = outputWidth;
+        canvas.height = outputHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(renderedCanvas, 0, 0, outputWidth, outputHeight);
+
+        const link = document.createElement('a');
+        link.download = fileName;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (error) {
+        console.error(error);
+        alert('圖片產生失敗，請重新整理頁面後再試一次。');
+      } finally {
+        downloadButton.disabled = false;
+        downloadButton.textContent = '下載 PNG';
+      }
+    });
+  </script>
+</body>
+</html>

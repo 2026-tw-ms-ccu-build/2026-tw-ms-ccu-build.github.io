@@ -29,6 +29,8 @@
 
 直接用瀏覽器開啟 `index.html`，或啟動任意靜態伺服器：
 
+活動橫幅可直接開啟 `banner.html` 預覽。頁面已設定為 **600cm × 70cm** 比例與列印尺寸，瀏覽器列印成 PDF 時可使用自訂紙張大小 `600cm × 70cm`、邊界 `0`。
+
 ```powershell
 # Python
 python -m http.server 8080
@@ -51,8 +53,10 @@ npx serve .
 ```
 .
 ├── index.html              # 主頁
+├── banner.html             # 600cm × 70cm 活動橫幅
 ├── assets/
 │   └── css/style.css       # 額外樣式
+│   └── css/banner.css      # 橫幅樣式
 ├── .nojekyll               # 停用 Jekyll 處理
 └── README.md
 ```
