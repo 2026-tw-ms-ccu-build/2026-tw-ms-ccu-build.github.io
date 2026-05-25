@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="banner-tools" aria-label="橫幅工具">
-    <button class="download-button" type="button" data-download-banner>下載 PNG</button>
+    <button class="download-button" type="button" data-download-banner>下載 100DPI PNG</button>
   </div>
 
   <main class="preview-stage" aria-label="Microsoft Build with CCU 2026 活動橫幅預覽">
@@ -42,17 +42,17 @@
 
     downloadButton.addEventListener('click', async () => {
       const banner = document.querySelector('.event-banner');
-      const fileName = 'microsoft-build-with-ccu-2026-banner.png';
+      const fileName = 'microsoft-build-with-ccu-2026-banner-100dpi.png';
 
       downloadButton.disabled = true;
-      downloadButton.textContent = '產生中...';
+      downloadButton.textContent = '產生 100DPI...';
 
       try {
         await document.fonts.ready;
 
         const bannerWidth = banner.getBoundingClientRect().width;
-        const outputWidth = 6000;
-        const outputHeight = 700;
+        const outputWidth = 23622;
+        const outputHeight = 2756;
         const scale = outputWidth / bannerWidth;
         const renderedCanvas = await html2canvas(banner, {
           backgroundColor: null,
@@ -75,7 +75,7 @@
         alert('圖片產生失敗，請重新整理頁面後再試一次。');
       } finally {
         downloadButton.disabled = false;
-        downloadButton.textContent = '下載 PNG';
+        downloadButton.textContent = '下載 100DPI PNG';
       }
     });
   </script>
