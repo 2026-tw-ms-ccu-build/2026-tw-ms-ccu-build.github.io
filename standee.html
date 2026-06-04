@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>60x160cm 直式海報 | Microsoft Build with CCU 2026</title>
+  <meta name="description" content="Microsoft Build with CCU 2026 60x160cm HTML5 直式海報。" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+  <link rel="stylesheet" href="assets/css/standee.css" />
+</head>
+<body>
+  <div class="poster-tools" aria-label="直式海報工具">
+    <button class="download-button" type="button" data-download-poster>下載 100DPI PNG</button>
+  </div>
+
+  <main class="preview-stage" aria-label="Microsoft Build with CCU 2026 直式海報預覽">
+    <section class="event-poster" aria-label="60x160cm 直式海報">
+      <div class="hero-band">
+        <img class="build-art" src="assets/img/build-hero.png" alt="Microsoft Build" />
+
+        <div class="brand-lockup" aria-label="Microsoft Build">
+          <span class="ms-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span>Microsoft Build</span>
+        </div>
+      </div>
+
+      <div class="poster-body">
+        <p class="eyebrow">Microsoft Build with CCU 2026</p>
+        <h1>微軟 x 中正大學<br />技術交流之夜</h1>
+        <p class="lead">AI、Cloud、.NET、GitHub 與開源實戰分享，現場提供 Pizza、飲料與點心。</p>
+
+        <div class="event-meta" aria-label="活動資訊">
+          <div>
+            <span>日期時間</span>
+            <strong>2026 / 06 / 13</strong>
+            <small>週六 17:00 - 21:00</small>
+          </div>
+          <div>
+            <span>活動地點</span>
+            <strong>中正大學 資工 101</strong>
+            <small>CCU CSIE Room 101</small>
+          </div>
+          <div>
+            <span>參加費用</span>
+            <strong>免費入場</strong>
+            <small>含餐點與交流時間</small>
+          </div>
+        </div>
+
+        <div class="schedule-band" aria-label="議程">
+          <div class="section-label">Schedule</div>
+          <div class="schedule-list">
+            <div><time>17:00</time><span>入場、Build 開幕影片、Pizza Networking</span></div>
+            <div><time>17:30</time><span>Daniel｜PostgreSQL Extension 與 Rust pgrx</span></div>
+            <div><time>18:30</time><span>林暐翰｜GitHub AI 訓練專屬知識庫開發</span></div>
+            <div><time>19:30</time><span>謝政廷｜企業開源、AI 與 GitHub 實戰經驗</span></div>
+            <div><time>20:30</time><span>結尾、交流與紀念禮物</span></div>
+          </div>
+        </div>
+
+        <div class="speaker-band" aria-label="講者">
+          <div class="section-label">Speakers</div>
+          <div class="speakers">
+            <article>
+              <img src="assets/img/daniel.jpeg" alt="Daniel" />
+              <div>
+                <h2>Daniel</h2>
+                <p>微軟台灣工程師</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/img/weihan.jpeg" alt="林暐翰" />
+              <div>
+                <h2>林暐翰</h2>
+                <p>.NET 基金會 / Microsoft MVP</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/img/jeffrey.jpg" alt="謝政廷" />
+              <div>
+                <h2>謝政廷</h2>
+                <p>台積電副理 / Microsoft MVP / GitHub Star</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <footer class="poster-footer">
+        <span>developer.microsoft.com/reactor</span>
+        <strong>Microsoft Reactor</strong>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    const downloadButton = document.querySelector('[data-download-poster]');
+
+    downloadButton.addEventListener('click', async () => {
+      const poster = document.querySelector('.event-poster');
+      const fileName = 'microsoft-build-with-ccu-2026-standee-60x160cm-100dpi.png';
+
+      downloadButton.disabled = true;
+      downloadButton.textContent = '產生 100DPI...';
+
+      try {
+        await document.fonts.ready;
+
+        const posterWidth = poster.getBoundingClientRect().width;
+        const outputWidth = 2362;
+        const outputHeight = 6299;
+        const scale = outputWidth / posterWidth;
+        const renderedCanvas = await html2canvas(poster, {
+          backgroundColor: null,
+          scale,
+          useCORS: true,
+          logging: false
+        });
+        const canvas = document.createElement('canvas');
+        canvas.width = outputWidth;
+        canvas.height = outputHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(renderedCanvas, 0, 0, outputWidth, outputHeight);
+
+        const link = document.createElement('a');
+        link.download = fileName;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (error) {
+        console.error(error);
+        alert('圖片產生失敗，請重新整理頁面後再試一次。');
+      } finally {
+        downloadButton.disabled = false;
+        downloadButton.textContent = '下載 100DPI PNG';
+      }
+    });
+  </script>
+</body>
+</html>

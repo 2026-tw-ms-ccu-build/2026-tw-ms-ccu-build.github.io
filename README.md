@@ -31,6 +31,10 @@
 
 活動橫幅可直接開啟 `banner.html` 預覽。頁面已設定為 **600cm × 70cm** 比例與列印尺寸，瀏覽器列印成 PDF 時可使用自訂紙張大小 `600cm × 70cm`、邊界 `0`。
 
+直式海報 / 易拉寶可直接開啟 `standee.html` 預覽。頁面已設定為 **60cm × 160cm** 比例與列印尺寸，並提供 **100DPI PNG** 下載按鈕。
+
+Builder 工作牌可直接開啟 `staff-badge.html` 預覽與列印。頁面使用 **A4** 版面，每張工作牌外框為 **65.4mm × 105mm**，內部卡面為 **54mm × 85mm**。
+
 ```powershell
 # Python
 python -m http.server 8080
@@ -54,9 +58,13 @@ npx serve .
 .
 ├── index.html              # 主頁
 ├── banner.html             # 600cm × 70cm 活動橫幅
+├── standee.html            # 60cm × 160cm 直式海報 / 易拉寶
+├── staff-badge.html        # A4 Builder 工作牌列印頁
 ├── assets/
 │   └── css/style.css       # 額外樣式
 │   └── css/banner.css      # 橫幅樣式
+│   └── css/standee.css     # 直式海報樣式
+│   └── css/staff-badge.css # 工作牌樣式
 ├── .nojekyll               # 停用 Jekyll 處理
 └── README.md
 ```
